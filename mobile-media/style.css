@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1152px;
+
+}
+
+.square {
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: red;
+    margin: 20px;
+}
+
+@media screen and (min-width: 480px) {
+    .square {
+        background-color: blue;
+
+    }
+    .container {
+        display: flex;
+    }
+}

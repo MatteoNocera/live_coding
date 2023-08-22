@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: lightgray;
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+
+img {
+    width: 150px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+h1 {
+    padding: 15px;
+}
