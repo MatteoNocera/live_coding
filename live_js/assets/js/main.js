@@ -28,3 +28,4 @@ console.log('Ciao sei nato nel ' + birthYear);
 // Stampare il risultato in pagina
 
 const greetingsElement = document.getElementById('greetings')
+document.getElementById('greetings').innerHTML = ('ciao sei nato nel ' + birthYear)
