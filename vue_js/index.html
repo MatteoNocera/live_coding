@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+
+    <style>
+        
+        .text-blue {
+            color: blue;
+        }
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- {{message}} -->
+
+        <!-- <input type="text" v-model="name">
+        <input type="text" v-model="surName">
+
+
+        <p>Ciao {{name}} {{surName}}</p> -->
+
+        <h1 v-bind:class="titleColor">Titolo</h1>
+        <button v-on:click="upDateColor">Click me</button>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
