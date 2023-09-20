@@ -66,9 +66,58 @@ console.log(others); */
 
 /* formatta un array di 3 elementi che tutti con maiuscola prima e minuscole dopo */
 
-const characters = ['pippo', 'PLUTO', 'PaPeRiNo']
+/* const characters = ['pippo', 'PLUTO', 'PaPeRiNo']
 
 let newCharacters = characters.map(
     
-)
+) */
 
+const animals = [
+    {
+        name: 'leone',
+        family: 'felidi',
+        class: 'mammiferi'
+    },
+    {
+        name: 'cane',
+        family: 'canidi',
+        class: 'mammiferi'
+    },
+    {
+        name: 'gallina',
+        family: 'fasianidi',
+        class: 'uccelli'
+    }
+];
+
+
+const mammiferi = [animals.filter(animal => animal.class == 'mammiferi')];
+
+console.log(mammiferi);
+
+const persone = [
+    {
+        nome:'Mario',
+        cognome: 'Rossi',
+        eta: 25
+    },
+    {
+        nome:'Laura',
+        cognome: 'Verdi',
+        eta: 17
+    },
+    {
+        nome:'Luigi',
+        cognome: 'Bianchi',
+        eta: 35
+    }
+];
+
+const frasi = persone.map(persona => {
+    const puoGuidare = persona.eta >= 18 ? 'può guidare' : 'non può guidare';
+    //persona.can_drive = `${persona.nome}` `${persona.cognome}` `${puoGuidare}`;
+
+    return `${persona.nome} ${persona.cognome} ${puoGuidare}`;
+});
+
+console.log(frasi);
